@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./Home";
+import Checkout from "./Checkout";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="app">
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/checkout" element={<Checkout />} />
         </Routes>
       </div>
     </BrowserRouter>
