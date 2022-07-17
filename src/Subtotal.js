@@ -27,7 +27,9 @@ function Subtotal() {
         prefix={"$"}
       />
 
-      <button>Proceed to checkout</button>
+      <button onClick={(e) => navigate("/payment")}>
+        Proceed to Checkout
+      </button>
     </div>
   );
 }
